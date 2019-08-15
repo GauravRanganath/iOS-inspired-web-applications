@@ -1,3 +1,26 @@
 .weather-parent{
 	color: white;
+	border: 1px solid #001242;
+}
+
+.location-timezone{
+	margin-top: 25px;
+	font-size: 30px;
+}
+
+.location-timezone-2{
+	font-size: 30px;
+}
+
+.icon{
+	margin: 10px 0 10px 0;
+}
+
+.degree-section{
+	display: flex;
+	justify-content: center;
+}
+
+.temperature-degree{
+	cursor: pointer;
 }

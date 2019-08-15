@@ -4,6 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="weather-style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	</head>
 	
@@ -69,6 +70,7 @@
       		<div class="weather-parent-wrapper">
       		<div class="weather-parent">
  			<div class="location">
+ 			
 				<h1 class="location-timezone">Timezone</h1>
 				<h1 class="location-timezone-2">Timezone</h1>
 				<canvas class="icon" width="110" height="110"></canvas>
@@ -76,7 +78,7 @@
 	
 			<div class="temperature">
 				<div class="degree-section">
-					<h2 class="temperature-degree">34</h2>
+					<h2 class="temperature-degree" id="degree">34</h2>
 					<span>F</span>
 				</div>
 		

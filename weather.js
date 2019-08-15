@@ -9,6 +9,9 @@ window.addEventListener('load', ()=> {
 	var city;
 	var timezone;
 	var cutLocation;
+	var celsius;
+	var fahrenheit;
+	var convertBool=true;
 	
 	if(navigator.geolocation){
 		navigator.geolocation.getCurrentPosition(position =>{
@@ -36,6 +39,9 @@ window.addEventListener('load', ()=> {
 				
 				timezone = timezone.slice(0,cutLocation);
 				city = city.slice((cutLocation+1),city.length);
+				
+				timezone = timezone.split('_').join(' ');
+				city = city.split('_').join(' ');
 				
 				console.log(city);
 				console.log(timezone);
