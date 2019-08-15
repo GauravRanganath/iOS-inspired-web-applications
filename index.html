@@ -1,57 +1,99 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="calculator-style.css">
+		<link rel="stylesheet" type="text/css" href="weather-style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	</head>
 	
 	<body>
-	
+	<br><br>
 	<h1>iOS Inspired Web Applications</h1><br>
 	
-		<h2><i>"Simplicity is the ultimate sophistication..."</i></h2><br>
-	 
-	<h2>Calculator</h2>
-	 
-		<div id="calc-parent">
+	<h2><i>"Simplicity is the ultimate sophistication..."</i></h2><br>
+		
+	<div class="container">
+  	<div class="row">
+   	
+    	<div class="col-sm-6">
+      		
+      	<h2>Calculator</h2><br>
+	 	
+	 	<div class=calc-parent-wrapper>
+		<div class="calc-parent">
 			
-			<div class="row">
+			<div class="row-calc">
 				<div class="column" id="calc-display-val">0</div>
 			</div>
 			
-			<div class="row">
+			<div class="row-calc">
 				<div class="calc-btn column" id="calc-clear">AC</div>
 				<div class="calc-btn column" id="calc-backspace">&#8676</div>
 				<div class="calc-btn column calc-btn-operator" id="calc-division">&#247</div>
 			</div>
 			
-			<div class="row">
+			<div class="row-calc">
 				<div class="calc-btn calc-btn-num column" id="calc-seven">7</div>
 				<div class="calc-btn calc-btn-num column" id="calc-eight">8</div>
 				<div class="calc-btn calc-btn-num column" id="calc-nine">9</div>
 				<div class="calc-btn calc-btn-operator column" id="calc-multiply">x</div>
 			</div>
 			
-			<div class="row">
+			<div class="row-calc">
 				<div class="calc-btn calc-btn-num column" id="calc-four">4</div>
 				<div class="calc-btn calc-btn-num column" id="calc-five">5</div>
 				<div class="calc-btn calc-btn-num column" id="calc-six">6</div>
 				<div class="calc-btn calc-btn-operator column" id="calc-minus">-</div>
 			</div>
 			
-			<div class="row">
+			<div class="row-calc">
 				<div class="calc-btn calc-btn-num column" id="calc-one">1</div>
 				<div class="calc-btn calc-btn-num column" id="calc-two">2</div>
 				<div class="calc-btn calc-btn-num column" id="calc-three">3</div>
 				<div class="calc-btn calc-btn-operator column" id="calc-plus">+</div>
 			</div>
 			
-			<div class="row">
+			<div class="row-calc">
 				<div class="calc-btn calc-btn-num column" id="calc-zero">0</div>
 				<div class="calc-btn decimalBtn column" id="calc-decimal">.</div>
 				<div class="calc-btn calc-btn-operator column" id="calc-equals">=</div>
 			</div>
-			
+			</div>
 		</div>
+      		
+    	</div>
+    	<div class="col-sm-6">
+      		<h2>Weather</h2><br>
+      		
+      		<div class="weather-parent-wrapper">
+      		<div class="weather-parent">
+ 			<div class="location">
+				<h1 class="location-timezone">Timezone</h1>
+				<h1 class="location-timezone-2">Timezone</h1>
+				<canvas class="icon" width="110" height="110"></canvas>
+			</div>
 	
+			<div class="temperature">
+				<div class="degree-section">
+					<h2 class="temperature-degree">34</h2>
+					<span>F</span>
+				</div>
+		
+				<div class="temperature-description">It's cold</div>
+			</div>
+
+
+      		</div>
+      		</div>
+      		
+    	</div>
+    	
+  	</div>
+	</div>
+	 
+		<script src="skycons.js"></script>
+		<script src="weather.js"></script>
 		<script>
 			
 			var oneBtn = document.getElementById('calc-one');

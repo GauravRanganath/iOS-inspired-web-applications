@@ -4,6 +4,10 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 
+.app1{
+	text-align: center;
+}
+
 .calc-btn{
 	background-color: silver;
 	color: black;
@@ -21,7 +25,7 @@ body{
 	background-color: orange;
 }
 
-.row{
+.row-calc{
 	display: table;
 	table-layout: fixed;
 	width: 200px;
@@ -32,12 +36,12 @@ body{
 }
 
 #calc-zero{
-	width: 51.66666667px;
+	width: 50.66666667px;
 	border-radius: 0 0 0 7px;
 }
 
 #calc-clear{
-	width: 51.66666667px;
+	width: 50.66666667px;
 }
 
 #calc-display-val{
@@ -75,6 +79,6 @@ h2{
 	border-radius: 0 0 7px 0;
 }
 
-#calc-parent{
-	margin-left: calc(50% - 100px);
+.calc-parent{
+	display: inline-block;
 }
